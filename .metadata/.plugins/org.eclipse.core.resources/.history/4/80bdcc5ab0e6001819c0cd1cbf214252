@@ -1,0 +1,18 @@
+package theTestProject;
+
+public class Student extends Person {
+	
+public String indexNumber;
+	
+	public Student(String firstName, String lastName, String indexNumber)
+	{
+		super(firstName, lastName);
+		this.indexNumber=indexNumber;
+	}
+	
+	public String toString()
+	{
+	  return  "The student "+firstName+" "+lastName+" has index No. = "+indexNumber;  
+	}
+
+}

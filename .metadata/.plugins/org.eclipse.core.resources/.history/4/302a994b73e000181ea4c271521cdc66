@@ -1,0 +1,15 @@
+package composition;
+
+public class testAuthor {
+	
+	//Author AhTeck = new Author("Ahun Teck","ahuntech@gmail.com",'M');
+	
+	public static void main(String []args) {
+		
+		Author AhTeck = new Author("Ahun Teck","ahuntech@gmail.com",'M');
+		System.out.println(AhTeck.toString());
+	}
+	
+	
+
+}

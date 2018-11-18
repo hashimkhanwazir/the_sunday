@@ -1,0 +1,21 @@
+package theTestProject;
+
+public class theTestProject {
+	
+	public static void main(String []args)
+	{
+		Person person=new Person("John","Davidson");
+		Student student=new Student("John","Smith","10/2014");
+		Professor professor=new Professor("Edwared","kelly","Programming in Java");
+		Student nextStudent = new Student();
+		
+System.out.println(person);
+System.out.println(student);
+System.out.println(professor);
+
+System.out.println("The sum of two doubles is "+nextStudent.add(13.4,23.4));
+System.out.println("The sum of three doubles is "+nextStudent.add(13.4,45.6,78.9));
+
+	
+}
+}

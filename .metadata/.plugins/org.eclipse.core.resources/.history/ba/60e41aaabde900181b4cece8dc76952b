@@ -1,0 +1,26 @@
+
+public class TheMainClass {
+	
+	//double 10/0;
+
+	public static void main(String []args)
+	{
+		System.out.println(Days.FRIDAY);
+		
+		try {
+		for (int a=1;a<=Days.values().length ;a++)
+			System.out.println(Days.values()[a]);
+		double a=10/0;
+		int[] array=new int[5];
+		}
+		
+	catch(Exception exc)
+		{
+           System.out.println("No exception found ");		
+		}
+		
+	
+		
+		
+	}
+}

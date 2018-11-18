@@ -1,0 +1,12 @@
+package tuesday13th;
+
+import java.time.LocalDate;
+
+public class MainJavaClass {
+	
+	public static void main(String []arg)
+	{ 
+	   System.out.println(Math.pow(3, 4));
+	   System.out.println(LocalDate.now());
+	}
+}

@@ -1,0 +1,36 @@
+
+public class Circle {
+	
+	double radius;
+	String color;
+	/////////////////////////////
+	Circle()
+	{
+		color="RED";
+		radius=1.0;
+	}
+	///////////////////////////////////	
+	Circle(double r)
+	{
+		color="RED";
+		radius=r;
+	}
+	//////////////////////////////////////
+	public double getRadius()
+	{
+	  return radius;	
+	}
+	///////////////////////////////////////
+	public double getArea()
+	{
+		return radius*radius*Math.PI;
+	}
+	/////////////////////////////////////////////
+	
+	public double circumFerance()
+	{
+		return 2*Math.PI*radius;
+	}
+}
+
+

@@ -1,0 +1,19 @@
+package thePackage;
+
+import thePackage.Person;
+import thePackage.Professor;
+import thePackage.Student;
+
+public class MyJavaProgram {
+	
+	public static void main(String []args)
+	{
+		Person person=new Person("John","Davidson");
+		Student student=new Student("John","Smith","10/2014");
+		Professor professor=new Professor("""""");
+		
+		
+	}
+	
+
+}

@@ -1,0 +1,28 @@
+
+package addition1;
+import java.util.Scanner;
+
+
+public class addition1 {
+	
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		int number1;
+		int number2;
+		int sum;
+		
+		System.out.print("Enter the first No. ");
+		number1=input.nextInt();
+		System.out.print("Enter the second No. ");
+		number2=input.nextInt();
+		
+		sum=number1+number2;
+		
+		System.out.println("the sum of the two numbers is  "+sum);
+		System.out.println("the product of the two numbers is "+(number1*number2));
+		System.out.println(number1*number1);
+		
+	}
+
+}

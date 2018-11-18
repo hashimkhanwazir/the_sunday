@@ -1,0 +1,25 @@
+
+public class testAccount {
+
+	public static void main(String[] args)
+	{
+		Account firstAccount=new Account(1234,"Assam Khan Yousafzai");
+		//Account anotherAccount = new Account(int,String);
+		
+		for (int a=1;a<11;a++)
+		{
+		firstAccount.credit(500);
+		System.out.println("The total balance is "+firstAccount.getbalance());
+		}
+		
+		firstAccount.debit(500);
+		
+		System.out.println(firstAccount.toString());
+		
+		Account anotherAccount= new Account(12,"Muhammad Irfan Khan");
+		System.out.println("Balance: "+anotherAccount.getbalance());
+		System.out.println("Name: "+anotherAccount.getName());
+		System.out.println("ID: "+anotherAccount.getID());
+		
+	}
+}

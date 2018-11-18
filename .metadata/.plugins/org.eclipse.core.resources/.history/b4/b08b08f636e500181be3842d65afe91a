@@ -1,0 +1,16 @@
+import new_package.Person;
+
+public class MyJavaProgram {
+	
+	public static void main(String []args)
+	
+	{
+		Person person=new Person("John","Javid");
+		Student student = new Student("John","Smith","10/2014");
+		
+		
+		
+		
+	}
+
+}

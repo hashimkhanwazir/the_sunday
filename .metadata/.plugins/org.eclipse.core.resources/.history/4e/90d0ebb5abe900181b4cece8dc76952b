@@ -1,0 +1,12 @@
+
+public class TheMainClass {
+
+	public static void main(String []args)
+	{
+		System.out.println(Days.FRIDAY);
+		
+		for (int a=1;a<=Days.values().length;a++)
+		System.out.println(Days.values());
+		
+	}
+}

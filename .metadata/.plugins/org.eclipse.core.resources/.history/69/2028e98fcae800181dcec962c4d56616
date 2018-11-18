@@ -1,0 +1,15 @@
+package AboutString;
+
+public class StringPractice {
+	
+	public static void main(String []args)
+	{
+		String string1="My name is ";
+		String string2="Hashim";
+		
+		System.out.println(string1 + string2);
+		
+		
+	}
+
+}

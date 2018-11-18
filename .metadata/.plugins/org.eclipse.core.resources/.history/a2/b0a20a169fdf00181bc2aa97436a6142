@@ -1,0 +1,16 @@
+
+public class testAccount {
+
+	public static void main(String[] args)
+	{
+		Account firstAccount=new Account(1234,"Assam Khan Yousafzai");
+		Account anotherAcount = new Account();
+		
+		firstAccount.credit(500);
+		System.out.println("The total balance is "+firstAccount.getbalance());
+		
+		
+		
+		
+	}
+}

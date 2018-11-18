@@ -1,0 +1,18 @@
+
+public class testCircle {
+
+	public static void main(String[] args)
+	{
+		
+		Circle c1=new Circle();
+		
+		System.out.println("The radius of the circle is"+c1.getRadius()
+				+ "and the Area of the Circle is "+c1.getArea());
+		
+		
+		
+		
+		
+		
+	}
+}

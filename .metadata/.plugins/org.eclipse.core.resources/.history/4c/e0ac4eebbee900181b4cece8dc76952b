@@ -1,0 +1,35 @@
+
+public class TheMainClass {
+	
+	//double 10/0;
+	static int[] array=new int[5];
+
+	public static void main(String []args)
+	{
+		System.out.println(Days.FRIDAY);
+		//array[7]=345;
+		System.out.println(array[4]);
+		
+		
+		try {
+		for (int a=1;a<=Days.values().length ;a++)
+			System.out.println(Days.values()[a]);
+		
+		double a=10/0;
+		array[7]=345;
+		}
+		
+	catch(ArrayIndexOutOfBoundsException c)
+		{
+           System.out.println(c);	
+       
+           
+           
+          
+		}
+		
+	
+		
+		
+	}
+}

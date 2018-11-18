@@ -1,0 +1,20 @@
+package addition1;
+	
+
+public class New_class {
+		
+		int a=23;
+		int b=34;
+		int e;
+		double c=34.5;
+		double d=45.7;
+		double f;
+		
+		//public static void main(String[] args)
+		//{
+	    New_class student1 = new New_class();
+	    
+		e=student1.the_sum(a,b);
+		f=student1.the_mult(c,d);
+		
+}

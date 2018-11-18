@@ -1,0 +1,9 @@
+package tuesday13th;
+
+public class MainJavaClass {
+	
+	public static void main(String []arg)
+	{ 
+	   System.out.println(Math.pow(3, 4));
+	}
+}

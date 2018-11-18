@@ -1,0 +1,20 @@
+package theTestProject;
+
+public class Professor extends Person{
+	
+public String courseName;
+	
+	public Professor(String firstName, String lastName,String courseName)
+			{
+		       super(firstName,lastName);
+		       this.courseName=courseName;
+		       
+			}
+	
+	public String toString()
+	{
+	  return  "The Professor having his first name "+firstName+" and last name "+lastName+" teaches = "+courseName;  
+	}
+
+
+}

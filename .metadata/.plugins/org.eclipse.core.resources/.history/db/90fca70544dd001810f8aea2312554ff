@@ -1,0 +1,40 @@
+
+public class testCircle {
+
+	public static void main(String[] args)
+	{
+		
+	/////////////////////////////////////////////////////////////////////
+		Circle c1=new Circle();
+		
+		System.out.println("The radius of the circle No. 1 is "+c1.getRadius()
+				+ " and the Area of the Circle is "+c1.getArea());
+		
+		System.out.println("The Color of the circle No. 1 is "+c1.color);
+	////////////////////////////////////////////////////////////////////////////
+		
+		Circle c2=new Circle(2.0);	
+		System.out.println("The radius of the circle No. 2 is "+c2.getRadius()
+		+ " and the Area of the Circle No. 2 is "+c2.getArea());
+		
+		System.out.println("The Color of the circle No. 2 is "+c2.color);
+		
+	//////////////////////////////////////////////////////////////////////////////
+		
+		Circle c3=new Circle(4.0,"BLACK");
+		System.out.println("The radius of the circle No. 3 is "+c3.getRadius()
+		+ " and the Area of the Circle No. 3 is "+c3.getArea());
+
+        System.out.println("The Color of the circle No. 3 is "+c3.color);
+				
+	///////////////////////////////////////////////////////////////////////////////
+        
+         System.out.println(" the radius is "+c2.radius);
+		
+		
+		
+		
+		
+		
+	}
+}
