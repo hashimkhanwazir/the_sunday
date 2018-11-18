@@ -11350,3 +11350,81 @@ Stack Trace
 
 !ENTRY org.eclipse.ui.monitoring 4 0 2018-11-18 13:01:21.307
 !MESSAGE UI freeze of 1.6s at 13:01:12.874
+
+!ENTRY org.eclipse.ui.monitoring 2 0 2018-11-18 14:41:20.203
+!MESSAGE UI freeze of 0.53s at 14:41:19.220
+
+!ENTRY org.eclipse.ui.monitoring 2 0 2018-11-18 15:11:22.693
+!MESSAGE UI freeze of 0.62s at 15:11:22.014
+
+!ENTRY org.eclipse.ui.monitoring 2 0 2018-11-18 15:16:27.569
+!MESSAGE UI freeze of 0.72s at 15:16:22.706
+!SUBENTRY 1 org.eclipse.ui.monitoring 1 0 2018-11-18 15:16:27.569
+!MESSAGE Sample at 15:16:23.254 (+0.548s)
+Thread 'main' tid=1 (RUNNABLE)
+!STACK 0
+Stack Trace
+	at java.util.Arrays.copyOfRange(Unknown Source)
+	at java.lang.String.<init>(Unknown Source)
+	at java.lang.StringBuilder.toString(Unknown Source)
+	at com.sun.xml.internal.bind.v2.model.impl.RuntimeBuiltinLeafInfoImpl$StringImplImpl.parse(Unknown Source)
+	at com.sun.xml.internal.bind.v2.model.impl.RuntimeBuiltinLeafInfoImpl$StringImplImpl.parse(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.parse(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.LeafPropertyLoader.text(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallingContext.text(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.processText(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(Unknown Source)
+	at org.eclipse.mylyn.internal.commons.notifications.feed.FeedReader.parse(FeedReader.java:54)
+	at org.eclipse.recommenders.news.impl.poll.DefaultFeedItemStore.parseNewsItems(DefaultFeedItemStore.java:135)
+	at org.eclipse.recommenders.news.impl.poll.DefaultFeedItemStore.udpate(DefaultFeedItemStore.java:53)
+	at org.eclipse.recommenders.news.impl.poll.DefaultNewsPollingService.fallbackToLocalStore(DefaultNewsPollingService.java:136)
+	at org.eclipse.recommenders.news.impl.poll.DefaultNewsPollingService.poll(DefaultNewsPollingService.java:104)
+	at org.eclipse.recommenders.news.impl.poll.DefaultNewsPollingService.poll(DefaultNewsPollingService.java:64)
+	at org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl.retrieveFeedContents(NewsToolControl.java:352)
+	at org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl.refreshUnreadItemsStatus(NewsToolControl.java:318)
+	at org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl.handlePollingResults(NewsToolControl.java:307)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.ui.internal.Workbench$$Lambda$20/7876869.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
